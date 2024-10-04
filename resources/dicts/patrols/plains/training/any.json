@@ -2820,6 +2820,48 @@
                     "art": "pln_hunt_twolegsobject1"
                 }
             ]
+    },
+    {
+        "patrol_id": "pln_hunt_fireflies_romance",
+        "biome": ["plains"],
+        "season": ["any"],
+        "types": ["training"],
+        "tags": ["romance"],
+        "patrol_art": "gen_train_talkingWW",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {
+		"all apprentices": [-1, -1]
+	},
+        "weight": 30,
+        "intro_text": "p_l has been dying to show another cat the beautiful clearing {PRONOUN/p_l/subject} discovered, and, well, what better cat than r_c! ",
+        "decline_text": "The pair are almost there, when another patrol bounds over to them, saying they need more warriors on their patrol and asking r_c to join them. p_l's tail droops in disappointment - {PRONOUN/p_l/subject} {VERB/p_l/suppose/supposes} this outing will have to wait.",
+        "chance_of_success": 100,
+        "relationship_constraint": ["romantic_5"],
+        "success_outcomes": [
+            {
+                "text": "Glancing over {PRONOUN/p_l/poss} shoulder, p_l is happy to see r_c's awe-struck look as {PRONOUN/r_c/subject} takes in the sight. Golden, flickering lights dance around the clearing, hovering just above the grass - fireflies, p_l explains. It truly is a sight to behold, and it's unclear which is glowing more: the fireflies or both cat's gazes.",
+                "exp": 10,
+                "weight": 20,
+                "relationships": [
+                    {
+                            "cats_to": ["p_l"],
+                            "cats_from": ["r_c"],
+                            "mutual": true,
+                            "values": ["romantic", "comfort"],
+                            "amount": 10
+                    }
+                ]
+                ]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "The patrol narrowly misses the prairie dog.",
+                "exp": 0,
+                "weight": 20,
+            }
+        ]
     }
 ]
 
