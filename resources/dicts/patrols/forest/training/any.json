@@ -2191,5 +2191,69 @@
                     ]
                 }
             ]
+    },
+    {
+        "patrol_id": "fst_train_forestrun_romance",
+        "biome": ["forest"],
+        "season": ["any"],
+        "types": ["training"],
+        "tags": ["romance"],
+        "patrol_art": "fst_hunt_fun3",
+        "min_cats": 2,
+        "max_cats": 2,
+        "min_max_status": {
+            "apprentice": [-1, -1]
+        },
+        "weight": 20,
+        "relationship_constraint": ["romance_10", "platonic_10", "not_mates"],
+        "intro_text": "Bounding through the forest always helps to clear p_l's mind, particularly when you're with an amazing cat like r_c!",
+        "decline_text": "Unfortunately, another patrol interupts their run, saying they need p_l and r_c to join their hunting patrol. Such is the way of a warrior.",
+        "chance_of_success": 60,
+        "success_outcomes": [
+            {
+                "text": "app1 listens carefully as the proper techniques of tree climbing are explained.",
+                "exp": 30,
+                "weight": 20
+            },
+            {
+                "text": "app1 picks up the instruction quickly and follows the directions of the other patrol members as {PRONOUN/app1/subject} {VERB/app1/climb/climbs} up the tree.",
+                "exp": 30,
+                "weight": 5
+            },
+            {
+                "text": "By the end of the patrol, s_c is leaping from branch to branch, as nimble as a squirrel.",
+                "exp": 30,
+                "weight": 20,
+                "stat_trait": ["confident", "daring", "bold"],
+                "can_have_stat": ["app"]
+            }
+        ],
+        "fail_outcomes": [
+            {
+                "text": "app1 manages to get into the tree, but climbing back down proves to be a problem.",
+                "exp": 0,
+                "weight": 20
+            },
+            {
+                "text": "s_c struggles to take the lesson seriously, and eventually the training session ends early with no real progress made.",
+                "exp": 0,
+                "weight": 20,
+                "stat_trait": ["troublesome", "childish", "playful"],
+                "can_have_stat": ["app"]
+            },
+            {
+                "text": "app1 begins making {PRONOUN/app1/poss} way up into the tree, but a branch cracks and breaks beneath {PRONOUN/app1/poss} weight! The apprentice is sent crashing back to earth, hurting {PRONOUN/app1/poss} paw in the process.",
+                "exp": 0,
+                "weight": 10,
+                "injury": [
+                    {
+                        "cats": ["app1"],
+                        "injuries": ["minor_injury"],
+                        "scars": ["TOETRAP"]
+                    }
+                ],
+                "history_text": { "scar": "m_c got scarred training in the forest as an apprentice." }
+            }
+        ]
     }
 ]
