@@ -2822,7 +2822,7 @@
             ]
     },
     {
-        "patrol_id": "pln_hunt_fireflies_romance",
+        "patrol_id": "pln_train_fireflies_romance",
         "biome": ["plains"],
         "season": ["any"],
         "types": ["training"],
@@ -2840,7 +2840,7 @@
         "relationship_constraint": ["romantic_5"],
         "success_outcomes": [
             {
-                "text": "Glancing over {PRONOUN/p_l/poss} shoulder, p_l is happy to see r_c's awe-struck look as {PRONOUN/r_c/subject} takes in the sight. Golden, flickering lights dance around the clearing, hovering just above the grass - fireflies, p_l explains. It truly is a sight to behold, and it's unclear which is glowing more: the fireflies or both cat's gazes.",
+                "text": "Glancing over {PRONOUN/p_l/poss} shoulder, p_l is happy to see r_c's awe-struck look as {PRONOUN/r_c/subject} takes in the sight. Golden, flickering lights dance around the clearing, hovering just above the grass - fireflies, p_l explains. It truly is a sight to behold, and it's unclear which is glowing more: the fireflies, or both cat's gazes.",
                 "exp": 10,
                 "weight": 20,
                 "relationships": [
@@ -2857,9 +2857,18 @@
         ],
         "fail_outcomes": [
             {
-                "text": "The patrol narrowly misses the prairie dog.",
+                "text": "Leading r_c into the clearing, p_l is overjoyed to see it's even more stunning than when {PRONOUN/p_l/subject} first discovered it. Turning to look at r_c, {PRONOUN/p_l/poss} smile quickly wilts as {PRONOUN/p_l/subject} {VERB/p_l/see/sees} {PRONOUN/r_c/poss} underwhelmed expression. Eventually, r_c awkwardly slips away to perform other duties, leaving a disappointed p_l behind.",
                 "exp": 0,
                 "weight": 20,
+		"relationships": [
+                    {
+                            "cats_to": ["p_l"],
+                            "cats_from": ["r_c"],
+                            "mutual": true,
+                            "values": ["romantic"],
+                            "amount": -10
+                    }
+                ]
             }
         ]
     }
