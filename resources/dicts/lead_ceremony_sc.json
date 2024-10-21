@@ -220,6 +220,10 @@
         {
           "text": "With a calm whisper that m_c should keep {PRONOUN/m_c/poss} ambitions in check and not lose {PRONOUN/m_c/self} to greed, r_c delivers a life for [virtue].",
           "virtue": ["acceptance", "bravery", "certainty", "clear judgment", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "friendship", "instincts", "mercy", "strength", "unity"]
+        },
+        {
+          "text": "Quietly reminding m_c to focus {PRONOUN/m_c/poss} ambitions on c_n's wellbeing, not {PRONOUN/m_c/poss} own greed, r_c grants {PRONOUN/m_c/object} a life for [virtue].",
+          "virtue": ["acceptance", "bravery", "certainty", "clear judgment", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "friendship", "instincts", "mercy", "strength", "unity"]
         }
       ]
     },
@@ -538,6 +542,19 @@
         },
         {
           "text": "m_c can't help but notice that r_c looks pleased as {PRONOUN/r_c/subject} {VERB/r_c/trot/trots} up. As {PRONOUN/r_c/subject} {VERB/r_c/give/gives} a life for [virtue], {PRONOUN/r_c/subject} {VERB/r_c/whisper/whispers} that c_n is surely in good paws.",
+          "virtue": ["acceptance", "bravery", "certainty", "clear judgment", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "friendship", "instincts", "mercy", "strength", "unity"]
+        }
+      ]
+    },
+
+    "loyal_warrior_outgoing_starclanwarrior": {
+      "tags": [],
+      "lead_trait": ["loyal"],
+      "star_trait": ["adventurous", "rebellious"],
+      "rank": ["warrior", "elder", "medicine cat", "mediator", "apprentice", "deputy"],
+      "life_giving": [
+        {
+          "text": "Though loyalty to c_n is important, r_c reminds m_c not to forget the cats who exist outside {PRONOUN/m_c/poss} Clan, granting a life for [virtue]",
           "virtue": ["acceptance", "bravery", "certainty", "clear judgment", "confidence", "courage", "determination", "endurance", "sympathy", "farsightedness", "friendship", "instincts", "mercy", "strength", "unity"]
         }
       ]
