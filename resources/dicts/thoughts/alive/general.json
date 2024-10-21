@@ -1785,7 +1785,9 @@
             "Chases {PRONOUN/m_c/poss} own tail around camp",
             "Wishes others didn't think {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} so weird",
             "Wants to change {PRONOUN/m_c/poss} name to be like a kittypet's",
-            "Talks to the bugs that crawl around camp"
+            "Talks to the bugs that crawl around camp",
+            "Giggles at the thought of a bird trying to swim",
+            "Goes missing and comes back smelling like garlic"
         ],
         "main_trait_constraint": [
             "strange"
